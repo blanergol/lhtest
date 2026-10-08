@@ -1,0 +1,12 @@
+name: Liho audit 20261008
+on:
+  workflow_dispatch:
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Owned canary
+        run: |
+          echo LIHO_AUDIT_GITHUB_CANARY
+          sleep 35
